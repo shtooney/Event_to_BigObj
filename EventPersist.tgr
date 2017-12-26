@@ -1,11 +1,10 @@
 trigger EventPersist on Speed__e (after insert) {
 
     for (Speed__e event : Trigger.New) {
-        String deviceId = event.Id__c;
         Integer mph = event.mph__c.intValue();
         String contactId = event.Contact__c;
         
-		BigObjectCreate.createBigObject(deviceId, mph, contactId);
+		BigObjectCreate.createBigObject(mph, contactId);
    }
     
 }
