@@ -3,7 +3,7 @@ public class BigObjectCreate {
     @future
     public static void createBigObject(Integer mph, String contactID){
 
-		//Prepare a random string as a unique identifier of a BigObject (in real life it's likely DeviceId + Timestamp)
+	//For this exercise, generate a random string as a unique ID of a BigObject (in real life it's likely DeviceId + Timestamp)
         final String chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqrstuvwxyz';
         String randStr = '';
         while (randStr.length() < 35) {
