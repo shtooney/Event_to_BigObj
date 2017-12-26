@@ -1,0 +1,10 @@
+public class BigObjectCreate {
+	
+    @future
+    public static void createBigObject(String deviceId, Integer mph, String contactID){
+        
+        Speed_Info__b speed = new Speed_Info__b(Id__c = deviceId, mph__c = mph, Contact__c = contactID);
+        Database.insertImmediate(speed);
+        
+    }
+}
