@@ -4,7 +4,7 @@ trigger EventPersist on Speed__e (after insert) {
         Integer mph = event.mph__c.intValue();
         String contactId = event.Contact__c;
         
-		BigObjectCreate.createBigObject(mph, contactId);
+	BigObjectCreate.createBigObject(mph, contactId);
    }
     
 }
